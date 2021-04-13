@@ -7,6 +7,10 @@ function HomePage(props) {
     const [posts, setPosts] = useState(props.posts);
 
     useEffect(() => {
+        console.log();
+    }, []);
+
+    useEffect(() => {
         axios({
             method: "GET",
             url: "http://localhost:3000/api/news"
